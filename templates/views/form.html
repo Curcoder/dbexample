@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<form class="forms" method="post" action="{{ url_for('form') }}">
+    <h1>Signup Form</h1>
+    {{ signup_form.csrf_token }}
+    {{ signup_form.username.label }}
+    {{ signup_form.username }}
+    {% if signup_form.username.errors %}
+        <ul>
+            {% for error in signup_form.username.errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    {{ signup_form.email.label }}
+    {{ signup_form.email }}
+    {{ signup_form.password.label }}
+    {{ signup_form.password }}
+    {{ signup_form.submit }}
+</form>
+
+</body>
+</html>

@@ -1,23 +1,22 @@
 import pyodbc
 
-conn_string = 'DRIVER={SQL Server};Server=TESTSERVER;Database=TESTDB;Trusted_connection=yes;'
+conn_string = 'DRIVER={SQL Server};Server=hq-dev-db-01;Database=JurgenDB;Trusted_connection=yes;'
 connection = pyodbc.connect(conn_string, autocommit=True)
 cursor = connection.cursor()
 
 def create_table():
-    cursor.execute("""CREATE TABLE tbUsers(
+    cursor.execute("""CREATE TABLE tbJurgen(
                       id INT IDENTITY(1,1) PRIMARY KEY,
-                      Name VARCHAR(250) NOT NULL,
+                      UserName VARCHAR(250) NOT NULL,
                       Email VARCHAR(250) NOT NULL UNIQUE,
-                      Address VARCHAR(250) NOT NULL)
+                      Passw VARCHAR(250) NOT NULL)
                   """)
     connection.commit()
     connection.close()
 
-def insert_user(name, email, address):
-    cursor.execute("""INSERT INTO tbUsers([Name], [Email], [Address]) 
-                      VALUES (?,?,?)""",
-                    (name, email, address))
+def insert_user(username, email, password):
+    cursor.execute("""INSERT INTO tbUsers([UserName], [Email], [Passw]) 
+                      VALUES (?,?,?)""", (username, email, password))
     connection.commit()
     connection.close()
 
@@ -32,8 +31,11 @@ def delete_user(email):
     connection.commit()
     connection.close()
 
-def update_user(email, address, name):
-    cursor.execute("UPDATE tbUsers SET [Email]=?, [Address]=? WHERE [Name]=?", email, address, name)
+def update_user(email, address, username):
+    cursor.execute("UPDATE tbUsers SET [Email]=?, [Passw]=? WHERE [UserName]=?", email, password, username)
     connection.commit()
     connection.close()
 
+
+# insert_user("Jesco", "jesco@hotmail.com", "test1234")
+# print(get_users())
