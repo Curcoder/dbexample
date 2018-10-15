@@ -2,18 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb231108-5508-4a29-84d4-893675e5e32e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/form.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/sass/_reset.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/sass/components/_form.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/views/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/views/success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbExample.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/dbscripts.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/dbscripts.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,11 +38,20 @@
     <splitter split-orientation="vertical" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="dbscripts.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/models/dbscripts.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="324">
+                  <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="18" selection-end-column="73" />
+                <state relative-caret-position="378">
+                  <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
                   </folding>
@@ -99,7 +96,7 @@
           <file leaf-file-name="form.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/templates/views/form.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
+                <state relative-caret-position="360">
                   <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="21" />
                 </state>
               </provider>
@@ -128,7 +125,6 @@
         <option value="$PROJECT_DIR$/models/scripts.py" />
         <option value="$PROJECT_DIR$/static/config.rb" />
         <option value="$PROJECT_DIR$/static/sass/_reset.sass" />
-        <option value="$PROJECT_DIR$/models/dbscripts.py" />
         <option value="$PROJECT_DIR$/static/sass/styles.sass" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/views/success.html" />
@@ -136,6 +132,7 @@
         <option value="$PROJECT_DIR$/models/form.py" />
         <option value="$PROJECT_DIR$/templates/views/form.html" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/models/dbscripts.py" />
       </list>
     </option>
   </component>
@@ -166,6 +163,11 @@
             <path>
               <item name="dbexample" type="b2602c69:ProjectViewProjectNode" />
               <item name="dbexample" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dbexample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dbexample" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dbexample" type="b2602c69:ProjectViewProjectNode" />
@@ -321,6 +323,14 @@
       <option name="presentableId" value="Default" />
       <updated>1539555577529</updated>
     </task>
+    <task id="LOCAL-00001" summary="&quot;Added a wtforms form to the project&quot;">
+      <created>1539634899493</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539634899493</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -341,9 +351,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32992035" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32992035" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.14732651" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.14732651" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.35039818" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4996209" weight="0.2249135" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4996209" visible="true" weight="0.2249135" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -388,6 +398,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;Added a wtforms form to the project&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Added a wtforms form to the project&quot;" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/models/dbscripts.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -413,13 +427,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/form.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/dbscripts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -454,6 +461,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/views/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/form.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -464,20 +488,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/views/form.html">
+    <entry file="file://$PROJECT_DIR$/models/dbscripts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="18" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="324">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
         </state>
       </provider>
     </entry>
