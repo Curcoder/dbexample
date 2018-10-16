@@ -1,6 +1,6 @@
 import pyodbc
 
-conn_string = 'DRIVER={SQL Server};testserver;Database=JurgenDB;Trusted_connection=yes;'
+conn_string = 'DRIVER={SQL Server};Server=HQ-DEV-DB-01;Database=JurgenDB;Trusted_connection=yes;'
 connection = pyodbc.connect(conn_string, autocommit=True)
 cursor = connection.cursor()
 
@@ -31,7 +31,7 @@ def delete_user(email):
     connection.commit()
     connection.close()
 
-def update_user(email, address, username):
+def update_user(email, password, username):
     cursor.execute("UPDATE tbUsers SET [Email]=?, [Passw]=? WHERE [UserName]=?", email, password, username)
     connection.commit()
     connection.close()

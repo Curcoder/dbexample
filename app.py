@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, flash, redirect, url_for
 from models.dbscripts import connection
 from models.form import SignupForm
 
@@ -14,10 +14,11 @@ def home():
 
 @app.route('/form', methods=['GET', 'POST'])
 def form():
-    signup_form = SignupForm()
-    if signup_form.validate_on_submit():
-        return f'Thank you for signing up, {signup_form.username.data}'
-    return render_template('views/form.html', signup_form=signup_form)
+    form = SignupForm()
+    if form.validate_on_submit():
+        flash(f'Thanks for signing up, {form.username.data}!', 'Success')
+        return redirect(url_for('home'))
+    return render_template('views/form.html', form=form)
 
 
 if __name__ == '__main__':

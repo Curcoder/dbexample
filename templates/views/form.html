@@ -12,23 +12,23 @@
 
 
 
-<form class="forms" method="post" action="{{ url_for('form') }}">
+<form class="forms" method="post" action="{{ url_for('form') }}" novalidate>
     <h1>Signup Form</h1>
-    {{ signup_form.csrf_token }}
-    {{ signup_form.username.label }}
-    {{ signup_form.username }}
-    {% if signup_form.username.errors %}
+    {{ form.hidden_tag() }}
+    {{ form.username.label }}
+    {{ form.username }}
+    {% if form.username.errors %}
         <ul>
-            {% for error in signup_form.username.errors %}
-                <li>{{ error }}</li>
+            {% for error in form.username.errors %}
+                <li class="errormsg">{{ error }}</li>
             {% endfor %}
         </ul>
     {% endif %}
-    {{ signup_form.email.label }}
-    {{ signup_form.email }}
-    {{ signup_form.password.label }}
-    {{ signup_form.password }}
-    {{ signup_form.submit }}
+    {{ form.email.label }}
+    {{ form.email }}
+    {{ form.password.label }}
+    {{ form.password }}
+    {{ form.submit }}
 </form>
 
 </body>
