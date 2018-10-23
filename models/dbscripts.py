@@ -1,6 +1,6 @@
 import pyodbc
 
-conn_string = 'DRIVER={SQL Server};Server=testdb;Database=JurgenDB;Trusted_connection=yes;'
+conn_string = 'DRIVER={SQL Server};Server=hq-dev-db-01;Database=JurgenDB;Trusted_connection=yes;'
 connection = pyodbc.connect(conn_string, autocommit=True)
 cursor = connection.cursor()
 
